@@ -1,0 +1,30 @@
+{% include 'home/header.html' %}
+{% load static %}
+<form class="schedule_form" method="POST" action="{% url 'show_schedule' %}">
+    {% csrf_token %}
+    <p>Курс</p>
+    <div class="course">
+        <div class="form_select_button active">1</div>
+        <div class="form_select_button">2</div>
+        <div class="form_select_button">3</div>
+    </div>
+    <p>Група</p>
+    <div class="group">
+        <div class="form_select_button active">ОПЗ-36</div>
+    </div>
+    <p>День</p>
+    <div class="day">
+        <div class="form_select_button">Понеділок</div>
+        <div class="form_select_button">Вівторок</div>
+        <div class="form_select_button">Середа</div>
+        <div class="form_select_button">Четвер</div>
+        <div class="form_select_button">П'ятниця</div>
+    </div>
+    <input name="data" class="form_hide_el" required type="text">
+    <br>
+    <button class="btn_submit" type="submit">Показати</button>
+</form>
+{% include 'home/footer.html' %}
+{% block scripts %}
+<script src="{% static 'schedule/schedule.js' %}"></script>
+{% endblock %}
