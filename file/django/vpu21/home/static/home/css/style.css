@@ -979,6 +979,9 @@ main .text .my_button {
     border-radius: 30px;
   }
   .profession_container .box img {
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 100%;
     -webkit-filter: brightness(30%);
             filter: brightness(30%);
     position: absolute;

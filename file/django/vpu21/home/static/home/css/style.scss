@@ -747,6 +747,8 @@ main {
             background: rgba(0, 0, 0, 0.445);
             border-radius: 30px;
             img {
+                object-fit: fill;
+                height: 100%;
                 filter: brightness(30%);
                 position: absolute;
                 z-index: -1;
