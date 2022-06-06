@@ -483,6 +483,7 @@ main .text .my_button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .showNews h1 {
@@ -754,6 +755,7 @@ main .text .my_button {
   width: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  padding-bottom: 50px;
 }
 
 .schedule_form .form_hide_el {

@@ -353,6 +353,7 @@ main {
 .showNews {
     .container {
         flex-direction: column;
+        padding-bottom: 50px;
     }
     h1 {
         margin: 20px 0;
@@ -549,6 +550,7 @@ main {
     margin-left: 50%;
     width: 50%;
     transform: translate(-50%);
+    padding-bottom: 50px;
     .form_hide_el {
         display: none;
     }
